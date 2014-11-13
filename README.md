@@ -9,6 +9,6 @@ UUID1 to Javascript Date
 
 ```javascript
 var date_obj = UUID_to_Date.get_date_obj( '8bf1aeb8-6b5b-11e4-95c0-001dba68c1f2' );
-console.log( date_obj.toLocaleString( ) ); // -> "11/13/2014, 9:06:06 PM"
+    date_obj.toLocaleString( ); //   '11/13/2014, 9:06:06 PM'
 ```
 
