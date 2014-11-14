@@ -2,8 +2,8 @@ UUID1 to Javascript Date
 ============
 
 ## API:
-* UUID_to_Date.get_date_obj(`UUID`)
-* UUID_to_Date.get_time_int(`UUID`)
+* get_date_obj(`UUID`)
+* get_time_int(`UUID`)
 
 ## Example:
 
