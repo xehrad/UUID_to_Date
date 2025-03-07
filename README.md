@@ -1,14 +1,15 @@
-UUID v1 ` to ` Javascript Date
-============
+# UUID to Date Converter
 
-## API:
-* get_date_obj(`UUID`)
-* get_time_int(`UUID`)
+A simple JavaScript function to convert **UUIDv1** timestamps into human-readable dates. This function extracts the timestamp from a UUIDv1 and converts it into a standard date format.
 
-## Example:
-
-```javascript
-var date_obj = UUID_to_Date.get_date_obj( '8bf1aeb8-6b5b-11e4-95c0-001dba68c1f2' );
-    date_obj.toLocaleString( );        // '11/13/2014, 9:06:06 PM'
+### **Example Usage**
+```js
+console.log(UUID_to_Date('8bf1aeb8-6b5b-11e4-95c0-001dba68c1f2').toLocaleString());
+// Expected output: "11/13/2014, 9:06:06 PM" (depends on locale)
 ```
 
+### **How It Works**
+1. Extracts the timestamp from the **first 60 bits** of a UUIDv1.
+2. Reorders the parts to match the **correct timestamp format**.
+3. Converts it from **100-nanosecond intervals since 1582-10-15** to a standard **Unix timestamp**.
+4. Returns a **JavaScript Date object**.
